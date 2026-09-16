@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KS Nature Fruit Juices — Freshness in Every Sip</title>
+<meta name="description" content="Freshly prepared fruit juices made with quality ingredients and natural flavors. Order online for pickup or delivery." />
+<link rel="icon" href="images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#home" class="brand" data-nav="home">
+      <img src="images/logo.png" alt="KS Nature Fruit Juices logo" class="brand-logo" />
+      <span class="brand-text">KS Nature<br><em>Fruit Juices</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" data-nav="home" class="nav-link active">Home</a>
+      <a href="#juices" data-nav="juices" class="nav-link">Our Juices</a>
+      <a href="#combos" data-nav="combos" class="nav-link">Fresh Combos</a>
+      <a href="#about" data-nav="about" class="nav-link">About Us</a>
+      <a href="#contact" data-nav="contact" class="nav-link">Contact Us</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search juices" title="Search">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M10 3a7 7 0 105.29 12.29l4.71 4.7 1.41-1.41-4.7-4.71A7 7 0 0010 3zm0 2a5 5 0 110 10 5 5 0 010-10z"/></svg>
+      </button>
+      <button class="cart-btn" id="cartToggle" data-nav="cart" aria-label="Open cart">
+        🧺<span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar" id="searchBar">
+    <input type="text" id="searchInput" placeholder="Search for orange, mango, combos…" />
+    <button id="searchClose" aria-label="Close search">✕</button>
+  </div>
+</header>
+
+<main id="mainContent">
+
+  <!-- ============ HOME VIEW ============ -->
+  <section class="view" id="view-home">
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hero-kicker">Small-batch • made fresh daily</p>
+        <h1>Freshness in<br>every sip<span class="hero-emoji">🍊🍎🥭</span></h1>
+        <p class="hero-desc">Freshly prepared fruit juices made with quality ingredients, natural flavors, and lots of freshness — pressed the day you order, never the day before.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" data-nav="juices">Order Now</button>
+          <button class="btn btn-ghost" data-nav="juices">Explore Juices</button>
+        </div>
+        <div class="hero-stats">
+          <div><strong>0%</strong><span>added sugar</span></div>
+          <div><strong>100%</strong><span>real fruit</span></div>
+          <div><strong>&lt; 1 day</strong><span>farm to glass</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="blob-frame blob-1"><img src="images/pexels-stephen-leonardi-587681991-30900665.jpg" alt="Fresh orange juice with orange slice"></div>
+        <div class="blob-frame blob-2"><img src="images/pexels-shameel-mukkath-3421394-17612823.jpg" alt="Fresh mint green juice"></div>
+        <div class="blob-frame blob-3"><img src="images/pexels-umarali07-28053225.jpg" alt="Watermelon berry juice"></div>
+      </div>
+    </section>
+
+    <section class="section-block" id="popularSection">
+      <div class="section-heading">
+        <h2>Popular Juices</h2>
+        <p>The ones our regulars can't do without.</p>
+      </div>
+      <div class="product-grid" id="popularGrid"></div>
+    </section>
+
+    <section class="section-block alt-bg" id="comboTeaser">
+      <div class="section-heading">
+        <h2>Fresh Combos</h2>
+        <p>Bundle up and save on our most-loved pairings.</p>
+      </div>
+      <div class="combo-grid" id="comboTeaserGrid"></div>
+    </section>
+
+    <section class="section-block" id="whyChoose">
+      <div class="section-heading">
+        <h2>Why Choose Us</h2>
+        <p>What actually goes into every bottle.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card feature-green">
+          <span class="feature-icon">🌿</span>
+          <h3>Fresh ingredients</h3>
+          <p>Fruit sourced daily and juiced within hours of arriving at the shop.</p>
+        </div>
+        <div class="feature-card feature-orange">
+          <span class="feature-icon">🧼</span>
+          <h3>Hygienic preparation</h3>
+          <p>Clean equipment, gloved hands, sealed cups — every single time.</p>
+        </div>
+        <div class="feature-card feature-yellow">
+          <span class="feature-icon">🧃</span>
+          <h3>Made to order</h3>
+          <p>Nothing sits around. Your juice is pressed after you place the order.</p>
+        </div>
+        <div class="feature-card feature-red">
+          <span class="feature-icon">❤️</span>
+          <h3>Customer first</h3>
+          <p>Not happy with your order? We'll make it right, no questions asked.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block alt-bg">
+      <div class="section-heading">
+        <h2>Customer Reviews</h2>
+        <p>Straight from the people who drink it.</p>
+      </div>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"The mosambi juice tastes exactly like the one my grandmother used to make. Ordering every week now."</p>
+          <span class="review-name">— Priya S.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Family Combo is perfect for our Sunday brunch. Kids finish it before I even sit down."</p>
+          <span class="review-name">— Arun K.</span>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"You can actually taste that it's fresh, not the sugary stuff from a carton. Worth every rupee."</p>
+          <span class="review-name">— Meher R.</span>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ============ OUR JUICES VIEW ============ -->
+  <section class="view" id="view-juices" hidden>
+    <div class="page-header">
+      <h1>Our Juices</h1>
+      <p>Pressed fresh, poured cold, zero shortcuts.</p>
+    </div>
+    <div class="category-filter" id="categoryFilter">
+      <button class="chip active" data-cat="all">All</button>
+      <button class="chip" data-cat="citrus">Citrus</button>
+      <button class="chip" data-cat="tropical">Tropical</button>
+      <button class="chip" data-cat="seasonal">Seasonal</button>
+      <button class="chip" data-cat="healthy">Healthy</button>
+    </div>
+    <div class="product-grid" id="juicesGrid"></div>
+    <p class="empty-state" id="juicesEmpty" hidden>No juices match your search. Try a different name or category.</p>
+  </section>
+
+  <!-- ============ COMBOS VIEW ============ -->
+  <section class="view" id="view-combos" hidden>
+    <div class="page-header">
+      <h1>Fresh Combos</h1>
+      <p>More flavors, better price, one order.</p>
+    </div>
+    <div class="combo-grid" id="combosGrid"></div>
+  </section>
+
+  <!-- ============ ABOUT VIEW ============ -->
+  <section class="view" id="view-about" hidden>
+    <div class="about-wrap">
+      <div class="about-copy">
+        <p class="hero-kicker">Our story</p>
+        <h1>Real fruit. No shortcuts.</h1>
+        <p>KS Nature Fruit Juices started as a small neighborhood counter with one promise: every glass is juiced from real fruit, the same day you order it. That promise hasn't changed.</p>
+        <ul class="about-list">
+          <li><strong>Fresh ingredients</strong> — fruit bought each morning, never frozen stock.</li>
+          <li><strong>Hygienic preparation</strong> — sanitized equipment and sealed serving cups.</li>
+          <li><strong>Made-to-order juices</strong> — nothing is pre-mixed or left standing.</li>
+          <li><strong>Quality fruits</strong> — hand-picked for ripeness and sweetness.</li>
+          <li><strong>Customer satisfaction</strong> — we'll remake or refund if something's off.</li>
+        </ul>
+      </div>
+      <div class="about-art">
+        <img src="images/pexels-umarali07-28053286.jpg" alt="Freshly made mango juice" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT VIEW ============ -->
+  <section class="view" id="view-contact" hidden>
+    <div class="page-header">
+      <h1>Contact Us</h1>
+      <p>Questions, bulk orders, or feedback — we're one message away.</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="info-row">
+          <span class="info-icon">🏪</span>
+          <div><strong>KS Nature Fruit Juices</strong><p>Shop No. 4, Main Bazaar Road, Uppal Kalan, Telangana</p></div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">📞</span>
+          <div><strong>Call us</strong><p><a href="tel:+919177299879">+91 91772 99879</a></p></div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🕒</span>
+          <div><strong>Business hours</strong><p>Mon – Sun: 9:00 AM – 10:00 PM</p></div>
+        </div>
+        <a class="btn btn-whatsapp" id="contactWhatsapp" target="_blank" rel="noopener">Chat on WhatsApp 💬</a>
+        <div class="map-placeholder">
+          <iframe
+            src="https://maps.google.com/maps?q=17.4707659,78.4769736&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="KS Nature Fruit Juices location"></iframe>
+        </div>
+        <a href="https://maps.app.goo.gl/BKAVKqwj1zRrZExSA" target="_blank" rel="noopener" class="map-link">Open in Google Maps</a>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Send us a message</h3>
+        <label>Name
+          <input type="text" name="name" required />
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" />
+        </label>
+        <label>Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-success" id="contactSuccess" hidden>Thanks! We'll get back to you shortly.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CART VIEW ============ -->
+  <section class="view" id="view-cart" hidden>
+    <div class="page-header">
+      <h1>Your Cart</h1>
+      <p>Review your juices before checking out.</p>
+    </div>
+    <div class="cart-layout">
+      <div class="cart-items" id="cartItemsList"></div>
+      <div class="cart-summary" id="cartSummary">
+        <h3>Order Summary</h3>
+        <div class="summary-row"><span>Subtotal</span><span id="sumSubtotal">₹0</span></div>
+        <div class="summary-row"><span>Delivery Charge</span><span id="sumDelivery">₹0</span></div>
+        <div class="summary-row total"><span>Grand Total</span><span id="sumTotal">₹0</span></div>
+        <button class="btn btn-primary btn-block" id="proceedToOrder">Proceed to Order</button>
+      </div>
+    </div>
+    <div class="empty-state" id="cartEmpty" hidden>
+      <p>Your cart is empty.</p>
+      <button class="btn btn-primary" data-nav="juices">Browse Juices</button>
+    </div>
+  </section>
+
+  <!-- ============ CHECKOUT VIEW ============ -->
+  <section class="view" id="view-checkout" hidden>
+    <div class="page-header">
+      <h1>Checkout</h1>
+      <p>Almost there — just a few details.</p>
+    </div>
+    <div class="checkout-layout">
+      <form class="checkout-form" id="checkoutForm">
+        <label>Customer Name
+          <input type="text" name="custName" required />
+          <span class="field-error" data-error="custName"></span>
+        </label>
+        <label>Mobile Number
+          <input type="tel" name="custPhone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" />
+          <span class="field-error" data-error="custPhone"></span>
+        </label>
+        <label>Delivery Address
+          <textarea name="custAddress" rows="3" required></textarea>
+          <span class="field-error" data-error="custAddress"></span>
+        </label>
+        <label>Order Notes (optional)
+          <textarea name="custNotes" rows="2" placeholder="Less ice, extra sweet, etc."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+      </form>
+      <div class="checkout-summary" id="checkoutSummary">
+        <h3>Order Summary</h3>
+        <div id="checkoutItemsList"></div>
+        <div class="summary-row"><span>Subtotal</span><span id="coSubtotal">₹0</span></div>
+        <div class="summary-row"><span>Delivery Charge</span><span id="coDelivery">₹0</span></div>
+        <div class="summary-row total"><span>Grand Total</span><span id="coTotal">₹0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORDER CONFIRMED VIEW ============ -->
+  <section class="view" id="view-confirmed" hidden>
+    <div class="confirmed-wrap">
+      <div class="confirmed-icon">✅</div>
+      <h1>Order sent!</h1>
+      <p>We've opened WhatsApp with your order details. Tap send there to confirm with the shop.</p>
+      <button class="btn btn-primary" data-nav="home">Back to Home</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ PRODUCT DETAILS MODAL ============ -->
+<div class="modal-overlay" id="productModal" hidden>
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div class="modal-image">
+      <img id="modalImg" src="" alt="" />
+    </div>
+    <div class="modal-body">
+      <span class="modal-badge" id="modalCategory"></span>
+      <h2 id="modalName"></h2>
+      <p id="modalDesc"></p>
+      <div class="modal-size" id="modalSizeWrap">
+        <span>Size</span>
+        <div class="size-options" id="modalSizes"></div>
+      </div>
+      <div class="modal-qty-price">
+        <div class="qty-control">
+          <button id="modalQtyMinus" aria-label="Decrease quantity">−</button>
+          <span id="modalQty">1</span>
+          <button id="modalQtyPlus" aria-label="Increase quantity">+</button>
+        </div>
+        <span class="modal-price" id="modalPrice"></span>
+      </div>
+      <button class="btn btn-primary btn-block" id="modalAddToCart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="drawer-overlay" id="drawerOverlay" hidden></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="drawer-header">
+    <h3>Your Cart</h3>
+    <button id="drawerClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="drawer-items" id="drawerItemsList"></div>
+  <div class="drawer-empty" id="drawerEmpty" hidden>
+    <p>🧺 Your cart is empty.</p>
+  </div>
+  <div class="drawer-footer" id="drawerFooter">
+    <div class="summary-row total"><span>Total</span><span id="drawerTotal">₹0</span></div>
+    <button class="btn btn-primary btn-block" id="drawerCheckout">Proceed to Order</button>
+  </div>
+</aside>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="KS Nature Fruit Juices logo" />
+      <p>Freshness in Every Sip 🍹</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a data-nav="home">Home</a>
+      <a data-nav="juices">Our Juices</a>
+      <a data-nav="combos">Fresh Combos</a>
+      <a data-nav="about">About Us</a>
+      <a data-nav="contact">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <p>+91 9177299879</p>
+      <p>Uppal Kalan, Telangana</p>
+      <p>Mon–Sun, 9 AM – 10 PM</p>
+    </div>
+  </div>
+  <p class="footer-bottom">© 2026 KS Nature Fruit Juices. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
